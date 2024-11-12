@@ -4,35 +4,15 @@ import time
 import requests
 
 def multi_token_convo():
-    print("MULTI TOKEN CONVO selected")
-
     # Logo
-logo = """
-\033[1;37m⌌\033[1;31m━━━━\033[1;32m━━━━\033[1;33m━━━━\033[1;34m━━━━\033[1;35m━━━━\033[1;36m━━━━\033[1;37m━━━━\033[1;30m━━━━\033[1;31m━━━\033[1;32m━━━━\033[1;33m━━━━━\033[1;34m━━━━\033[1;35m━━\033[1;37m⌍
-\033[1;38m▏ ______     ______     __  __     __     __        ▏
-\033[1;39m▏/\  ___\   /\  __ \   /\ \_\ \   /\ \   /\ \       ▏
-\033[1;35m▏\ \___  \  \ \  __ \  \ \  __ \  \ \ \  \ \ \____  ▏
-\033[1;32m▏ \/\_____\  \ \_\ \_\  \ \_\ \_\  \ \_\  \ \_____\ ▏
-\033[1;31m▏  \/_____/   \/_/\/_/   \/_/\/_/   \/_/   \/_____/ ▏
-\033[1;37m⌎\033[1;31m━━━━\033[1;32m━━━━\033[1;33m━━━━\033[1;34m━━━━\033[1;35m━━━━\033[1;36m━━━━\033[1;37m━━━━\033[1;30m━━━━\033[1;31m━━━\033[1;32m━━━━\033[1;33m━━━━━\033[1;34m━━━━\033[1;35m━━\033[1;37m⌏                                              
-                                             
-\033[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-\033[37m[*] 𝐎𝐖𝐍𝐄𝐑      : \033[36m𝗦𝗔𝗛𝗜𝗟 
-\033[37m[*] 𝐆𝐈𝐓𝐇𝐔𝐁     : \033[33m𝗦𝗔𝗛𝗜𝗟 𝗫𝗗 
-\033[37m[*] 𝐒𝐓𝐀𝐓𝐔𝐒     : \033[32m𝐏𝐑𝐄𝐌𝐈𝐔𝐌
-\033[37m[*] 𝐓𝐄𝐀𝐌       : \033[35m𝐎𝐍𝐄 𝐌𝐀𝐍 𝐀𝐑𝐌𝐘
-\033[37m[*] 𝐓𝐎𝐎𝐋       : \033[34m𝐌𝐔𝐋𝐓𝐈 𝐓𝐎𝐊𝐄𝐍 𝐂𝐎𝐍𝐕𝐎 𝐓𝐎𝐎𝐋
-\033[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
+    logo = """
+    \\
+    ...
+    """
 
-print(logo)
+    print(logo)
 
-import os
-import random
-import time
-import requests
-
-# Facebook Graph API endpoint
+ # Facebook Graph API endpoint
 thread_id = input("\033[1;32mEnter thread ID: ")
 url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
 
@@ -107,14 +87,7 @@ def process_messages_thread():
 process_messages_thread()
 
 def single_convo_without_haters_name():
-    print("SINGLE CONVO WITHOUT HATERS NAME selected")
-
- import os
-import random
-import time
-import requests
-
-# Facebook Graph API endpoint
+    # Facebook Graph API endpoint
 thread_id = input("Enter thread ID: ")
 url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
 
@@ -170,16 +143,12 @@ def process_messages_thread():
 
 process_messages_thread()
 
-
 def main():
     os.system('clear')
-
     print("Select Option:")
     print("1. MULTI TOKEN CONVO")
     print("2. SINGLE CONVO WITHOUT HATERS NAME")
-
     option = input("Enter your choice (1/2): ")
-
     if option == "1":
         multi_token_convo()
     elif option == "2":
