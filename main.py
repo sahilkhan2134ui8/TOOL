@@ -3,20 +3,8 @@ import random
 import time
 import requests
 
-
-os.system('clear')
-
-print("Select Option:")
-print("1. MULTI TOKEN CONVO")
-print("2. SINGLE CONVO WITHOUT HATERS NAME")
-
-option = input("Enter your choice (1/2): ")
-
-if option == "1":
-    # MULTI TOKEN CONVO CODE HERE
-    # Paste your first code here
+def multi_token_convo():
     print("MULTI TOKEN CONVO selected")
-    # Your code here...
 
     # Logo
 logo = """
@@ -38,6 +26,11 @@ logo = """
 """
 
 print(logo)
+
+import os
+import random
+import time
+import requests
 
 # Facebook Graph API endpoint
 thread_id = input("\033[1;32mEnter thread ID: ")
@@ -113,13 +106,10 @@ def process_messages_thread():
 
 process_messages_thread()
 
-elif option == "2":
-    # SINGLE CONVO WITHOUT HATERS NAME CODE HERE
-    # Paste your second code here
+def single_convo_without_haters_name():
     print("SINGLE CONVO WITHOUT HATERS NAME selected")
-    # Your code here...
 
-import os
+ import os
 import random
 import time
 import requests
@@ -181,5 +171,21 @@ def process_messages_thread():
 process_messages_thread()
 
 
-else:
-    print("Invalid choice. Please try again.")
+def main():
+    os.system('clear')
+
+    print("Select Option:")
+    print("1. MULTI TOKEN CONVO")
+    print("2. SINGLE CONVO WITHOUT HATERS NAME")
+
+    option = input("Enter your choice (1/2): ")
+
+    if option == "1":
+        multi_token_convo()
+    elif option == "2":
+        single_convo_without_haters_name()
+    else:
+        print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
